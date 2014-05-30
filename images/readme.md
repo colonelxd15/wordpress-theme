@@ -1,0 +1,1 @@
+Place here all the images (*.jpg, *.jpeg, *.png, *.gif) files needed for the theme.
