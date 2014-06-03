@@ -17,8 +17,8 @@
 		register_sidebar(array(
 			'name' => 'Footer Widget Area',
 			'id' => 'widget-area-footer',
-			'before_widget' => '<li class="widget-content">',
-			'after_widget' => '</li>',
+			'before_widget' => '<div class="widget-content col-md-3">',
+			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'));
 	}
@@ -27,4 +27,5 @@
 	    wp_enqueue_script('jquery.bootstrap.min');
 	}
 	add_action( 'init', 'wpt_register_js' );
+	add_theme_support('post-thumbnails');
 ?>
