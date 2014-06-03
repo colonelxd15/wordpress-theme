@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
   
-    $('input[id$="s"]').attr('placeholder', 'Search');
+    $('input[id$="s"]').attr('placeholder', 'Search...');
 
  	$.each($('input, textarea'), function(index, value) {
 		$(this).data('holder', $(this).attr('placeholder'));
