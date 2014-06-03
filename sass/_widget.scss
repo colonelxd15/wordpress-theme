@@ -1,0 +1,37 @@
+@import "search";
+
+.sidebar{
+	list-style: none;
+	.widget-content{
+		border: 3px solid #858585;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		margin-left: 5px;
+		margin-right: 5px;
+		label, h3{
+			text-transform: uppercase;
+			color: white;
+			background: #858585;
+			width: 100%;
+			padding: 10px 10px;
+			margin-top: 0px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 500;
+			
+		}
+		ul{
+			list-style: none;
+			a{
+				color: #2b2b2b;
+				line-height: 25px;
+			}
+		}
+	}
+}
+
+.col-md-3{
+	padding-left: 0px;
+			padding-right: 0px;
+
+}
