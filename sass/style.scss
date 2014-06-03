@@ -1,4 +1,3 @@
-@import "widget";
 
 .header,
 .footer,
@@ -8,27 +7,17 @@
 	text-align: justify;
 }
 
-.header-info{
-	width: 300px;
-	padding: 15px;
-	.logo-placeholder{
-		float: left;
-		margin-right: 20px;
-		img{
-			width: 50px; 
-			height: 50px;
-		}
-	}
-	p:last-child{
-		margin: 0;
-	}
+@import "partials/variables";
+@import "partials/typography";		
+@import "partials/navigation";
+@import "partials/footer";
+@import "partials/search";
+@import "partials/widget";
+
+body{
+	padding: 0px;
 }
-/***********************
-Navbar Properties
-***********************/
-.navbar-toggle{
-	margin: 22px 15px;
-}
+
 
 .navbar-default{
 	margin-bottom: 0px;
@@ -88,4 +77,3 @@ Footer Properties
 		margin-bottom: 0px;
 	}
 }
-

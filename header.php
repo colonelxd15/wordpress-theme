@@ -9,28 +9,25 @@
     wp_head();
    ?>
   <body>
-  <div class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="site-title">
+      <a class="navbar-brand" href="<?php echo home_url(); ?>">
+         <?php bloginfo('name'); ?>
+      </a>
+      <div class="site-description">site description</div>
+    </div>
+
       <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <header class="header-info">
-            <div class="logo-placeholder">
-              <img src="">
-            </div>
-                <p><?php bloginfo('name'); ?></p>
-                <p><?php bloginfo('description'); ?></p>
-          </header>
         </div>
-        <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+
+            <?php menu_attr(); ?>
+        </div>
+  </nav>
