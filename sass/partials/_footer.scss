@@ -1,32 +1,37 @@
-.widget-content{
-	clear: both;
-	.widget-title{
-		font-family: 'OpenSans-SemiBold';
-		font-size: 18px;
-		text-transform: uppercase;
-	}
-	.textwidget{
-		.contacts_footer{
-			position: relative;
-			clear: both;
-			.detail{
-				width: 90px;
-				height: auto;
-				font-family: 'OpenSans-Light';
-				font-size: 14px;
-				text-transform: uppercase;
-				float: left;
-				margin-bottom: 20px;
-			}
-			.info{
-				width: auto;
-				height: auto;
-				max-width: 130px;
-				font-family: 'OpenSans-Regular';
-				font-size: 14px;
-				float: left;
-				margin-bottom: 20px;
-			}
+.before-footer{
+	background: #858585;
+	.contacts_before_footer{
+		position: relative;
+		clear: both;
+		color: #fff;
+		margin-top: 15px;
+		.detail{
+			width: 100px;
+			height: auto;
+			font-family: 'OpenSans-Light';
+			font-size: 14px;
+			text-transform: uppercase;
+			float: left;
+			margin-bottom: 20px;
 		}
+		.info{
+			width: auto;
+			height: auto;
+			max-width: 160px;
+			font-family: 'OpenSans-Regular';
+			font-size: 14px;
+			float: left;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.footer{
+	height: auto;
+	p{
+		font-weight: bold;
+		font-size: 16px;
+		padding: 5px 0px;
+		margin-bottom: 0px;
 	}
 }

@@ -1,85 +1,266 @@
-/*
-Syntax error: File to import not found or unreadable: widget.
-              Load paths:
-                /var/www/wordpress/wp-content/themes/wordpress-theme/sass
-                /home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/frameworks/blueprint/stylesheets
-                /home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 1 of /var/www/wordpress/wp-content/themes/wordpress-theme/sass/style.scss
+/* line 3, ../sass/style.scss */
+.header,
+.footer,
+.contents {
+  padding: 15px;
+  text-align: justify;
+}
 
-1: /var/www/wordpress/wp-content/themes/wordpress-theme/sass/style.scss
+@font-face {
+  font-family: 'RobotoSlab-Bold';
+  src: url("../fonts/RobotoSlab-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
-Backtrace:
-/var/www/wordpress/wp-content/themes/wordpress-theme/sass/style.scss:1
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/import_node.rb:45:in `import'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/import_node.rb:28:in `imported_file'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/import_node.rb:37:in `css_import?'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/tree/root_node.rb:20:in `render'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/engine.rb:315:in `_render'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/sass-3.2.18/lib/sass/engine.rb:262:in `render'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:126:in `timed'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:138:in `block in compile'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/logger.rb:45:in `red'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:137:in `compile'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:118:in `compile_if_required'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:101:in `each'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:101:in `block in run'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:126:in `timed'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/compiler.rb:100:in `run'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/commands/watch_project.rb:147:in `recompile'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/path.rb:39:in `delete'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:32:in `block in deleted'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `each'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `deleted'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:16:in `refresh'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:205:in `call'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:205:in `block in watch'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/watcher.rb:41:in `[]'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/watcher.rb:41:in `callback!'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/event.rb:128:in `callback!'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:238:in `block in process'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:238:in `each'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:238:in `process'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:221:in `run'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/backends/inotify.rb:20:in `run'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/commands/watch_project.rb:87:in `perform'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/commands/base.rb:18:in `execute'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/commands/project_base.rb:19:in `execute'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/bin/compass:30:in `block in <top (required)>'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/bin/compass:44:in `call'
-/home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/bin/compass:44:in `<top (required)>'
-/home/arvey/.rvm/gems/ruby-2.1.1/bin/compass:23:in `load'
-/home/arvey/.rvm/gems/ruby-2.1.1/bin/compass:23:in `<main>'
-/home/arvey/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
-/home/arvey/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: widget.\A               Load paths:\A                 /var/www/wordpress/wp-content/themes/wordpress-theme/sass\A                 /home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/frameworks/blueprint/stylesheets\A                 /home/arvey/.rvm/gems/ruby-2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of /var/www/wordpress/wp-content/themes/wordpress-theme/sass/style.scss\A \A 1: /var/www/wordpress/wp-content/themes/wordpress-theme/sass/style.scss"; }
+@font-face {
+  font-family: 'RobotoSlab-Light';
+  src: url("../fonts/RobotoSlab-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url("../fonts/OpenSans-Semibold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 1, ../sass/partials/_navigation.scss */
+.navbar {
+  background-color: white;
+  height: 80px;
+  border: 0px;
+  border-radius: 0px;
+  border-color: white;
+  border-bottom: 5px solid #858585;
+}
+/* line 8, ../sass/partials/_navigation.scss */
+.navbar .site-title {
+  float: left;
+  padding: 20px;
+}
+/* line 11, ../sass/partials/_navigation.scss */
+.navbar .site-title .navbar-brand {
+  color: #1d1d1d;
+  font-family: 'RobotoSlab-Bold';
+  font-size: 24px;
+  padding: 0px;
+  width: auto;
+  height: auto;
+  float: left;
+  position: relative;
+}
+/* line 21, ../sass/partials/_navigation.scss */
+.navbar .site-title .site-description {
+  position: relative;
+  color: #858585;
+  font-family: 'OpenSans-Light';
+  font-size: 14px;
+  text-transform: uppercase;
+  float: left;
+  clear: both;
+}
+/* line 31, ../sass/partials/_navigation.scss */
+.navbar .nav {
+  margin-top: 0px;
+}
+/* line 33, ../sass/partials/_navigation.scss */
+.navbar .nav li {
+  position: relative;
+  min-width: 130px;
+  height: 75px;
+  padding: 10px 10px;
+  text-align: center;
+}
+/* line 39, ../sass/partials/_navigation.scss */
+.navbar .nav li a {
+  color: #858585;
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 45, ../sass/partials/_navigation.scss */
+.navbar .nav li:hover, .navbar .nav li:focus, .navbar .nav li.active {
+  background-color: #858585;
+}
+/* line 47, ../sass/partials/_navigation.scss */
+.navbar .nav li:hover a, .navbar .nav li:focus a, .navbar .nav li.active a {
+  color: white;
+}
+
+/* line 1, ../sass/partials/_footer.scss */
+.before-footer {
+  background: #858585;
+}
+/* line 3, ../sass/partials/_footer.scss */
+.before-footer .contacts_before_footer {
+  position: relative;
+  clear: both;
+  color: #fff;
+  margin-top: 15px;
+}
+/* line 8, ../sass/partials/_footer.scss */
+.before-footer .contacts_before_footer .detail {
+  width: 100px;
+  height: auto;
+  font-family: 'OpenSans-Light';
+  font-size: 14px;
+  text-transform: uppercase;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 17, ../sass/partials/_footer.scss */
+.before-footer .contacts_before_footer .info {
+  width: auto;
+  height: auto;
+  max-width: 160px;
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 29, ../sass/partials/_footer.scss */
+.footer {
+  height: auto;
+}
+/* line 31, ../sass/partials/_footer.scss */
+.footer p {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 0px;
+  margin-bottom: 0px;
+}
+
+/* line 1, ../sass/partials/_search.scss */
+#searchform {
+  text-align: center;
+}
+/* line 3, ../sass/partials/_search.scss */
+#searchform #searchsubmit {
+  visibility: hidden;
+  position: absolute;
+}
+/* line 7, ../sass/partials/_search.scss */
+#searchform #s {
+  border-radius: 8px;
+  background: #ededed;
+  border: 2px solid #858585;
+  padding: 5px 5px;
+  margin-top: 5px;
+}
+
+/* line 1, ../sass/partials/_widget.scss */
+.sidebar {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 4, ../sass/partials/_widget.scss */
+.sidebar .widget-content {
+  border: 3px solid #858585;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 10, ../sass/partials/_widget.scss */
+.sidebar .widget-content label, .sidebar .widget-content h3 {
+  text-transform: uppercase;
+  color: white;
+  background: #858585;
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* line 22, ../sass/partials/_widget.scss */
+.sidebar .widget-content ul {
+  list-style: none;
+}
+/* line 24, ../sass/partials/_widget.scss */
+.sidebar .widget-content ul a {
+  color: #2b2b2b;
+  line-height: 25px;
+}
+
+/* line 32, ../sass/partials/_widget.scss */
+.before-footer {
+  padding-left: 15px;
+}
+/* line 34, ../sass/partials/_widget.scss */
+.before-footer .widget-content {
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+/* line 39, ../sass/partials/_widget.scss */
+.before-footer .widget-content label, .before-footer .widget-content h3 {
+  text-transform: uppercase;
+  color: #FFF;
+  width: 100%;
+  background: none;
+  padding: 10px 10px;
+  margin-top: 0px;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 51, ../sass/partials/_widget.scss */
+.before-footer .widget-content ul {
+  list-style: none;
+}
+/* line 53, ../sass/partials/_widget.scss */
+.before-footer .widget-content ul a {
+  color: #FDFDFD;
+  line-height: 25px;
+}
+/* line 59, ../sass/partials/_widget.scss */
+.before-footer #s {
+  margin-left: -70px;
+}
+
+/* line 16, ../sass/style.scss */
+body {
+  padding: 0px;
+}
+
+/* line 21, ../sass/style.scss */
+.navbar-default {
+  margin-bottom: 0px;
+}
+
+/***********************
+Sidebar Properties
+***********************/
+/* line 27, ../sass/style.scss */
+.sidebar {
+  padding-left: 0;
+}
+
+/***********************
+contents Properties
+***********************/
+/* line 34, ../sass/style.scss */
+.contents {
+  background: #fdfdfd;
+}

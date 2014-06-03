@@ -23,11 +23,11 @@
 			'after_title' => '</h3>'));
 	}
 	//Register and get jQuery from GoogleCDN
-	function jqueryjs(){
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', false, '1.11.1',true); //loads to footer
-		wp_enqueue_script('jquery');
-	}
+	// function jqueryjs(){
+	// 	wp_deregister_script('jquery');
+	// 	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', false, '1.11.1',true); //loads to footer
+	// 	wp_enqueue_script('jquery');
+	// }
 
 	//Register local Bootstrap
 	function wpt_register_js() {
@@ -48,9 +48,6 @@
 
 	add_action( 'init', 'wpt_js' );
 	add_action( 'init', 'wpt_main_js' );
-
-	
-	add_action( 'init', 'jqueryjs' );
 	add_action( 'init', 'wpt_register_js' );
 
 	register_nav_menus( array(

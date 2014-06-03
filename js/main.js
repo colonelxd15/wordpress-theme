@@ -1,4 +1,3 @@
-$(document).ready(function() {
-
+jQuery(document).ready(function($) {
     $('#s').val('').prop("placeholder","Search...");
 });
