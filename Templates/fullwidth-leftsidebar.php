@@ -4,6 +4,7 @@ Template Name: Full Width Page With Left Sidebar Only
  */
 get_header(); ?>
 	<section class="container-fluid contents">
+		<div class="row">
 		<div class="col-md-2 contents">
 			<?php get_sidebar(); ?>
 		</div>
@@ -29,5 +30,6 @@ get_header(); ?>
 				</article>
 			<?php endwhile; ?>
 		</div>
+	</div>
 	</section>
 <?php get_footer(); ?>
