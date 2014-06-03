@@ -274,3 +274,12 @@ contents Properties
 .contents {
   background: #fdfdfd;
 }
+/* line 36, ../sass/style.scss */
+.contents .row {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/* line 40, ../sass/style.scss */
+.contents .entry-content {
+  width: 1000px;
+}
