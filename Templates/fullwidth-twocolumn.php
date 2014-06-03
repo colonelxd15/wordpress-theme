@@ -11,15 +11,17 @@ get_header(); ?>
 			}
 		?>
 		<?php 
-			// query_posts('category_name=');
-			wp_reset_postdata(); 
+			query_posts('category_name=');
+			// wp_reset_postdata(); 
 			while(have_posts()): the_post() 
 		?>
 			<article class="col-md-6">
 				<a href="<?php the_permalink(); ?>">
 					<?php the_title('<h3 class="entry-title">','</h3>'); ?>
 				</a>
-				<?php the_content('<div class="entry-content">','</div>'); ?>
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
 			</article>
 		<?php endwhile; ?>
 	</section>
