@@ -27,7 +27,6 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
             <?php menu_attr(); ?>
         </div>
   </nav>

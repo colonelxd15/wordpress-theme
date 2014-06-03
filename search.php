@@ -5,7 +5,7 @@ Template Name: Search Page
  get_header();
 ?>
 	<section class="container-fluid contents">
-		<div class="col-md-10 col-md-offset-1 contents">
+		<div class="col-md-12 contents">
 			<?php get_search_form(); ?>
 
 			<?php 
