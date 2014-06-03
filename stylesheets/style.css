@@ -1,36 +1,80 @@
-/* line 3, ../sass/style.scss */
-.header,
-.footer,
-.contents {
-  border: 1px solid #000;
-  padding: 15px;
-  text-align: justify;
+@font-face {
+  font-family: 'RobotoSlab-Bold';
+  src: url("../fonts/RobotoSlab-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 9, ../sass/style.scss */
-.header-info {
-  width: 300px;
-  padding: 15px;
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-/* line 12, ../sass/style.scss */
-.header-info .logo-placeholder {
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 1, ../sass/partials/_navigation.scss */
+.navbar-default {
+  background-color: white;
+  height: 80px;
+  border-bottom: 5px solid #858585;
+}
+/* line 5, ../sass/partials/_navigation.scss */
+.navbar-default .site-title {
   float: left;
-  margin-right: 20px;
+  padding: 20px;
 }
-/* line 15, ../sass/style.scss */
-.header-info .logo-placeholder img {
-  width: 50px;
-  height: 50px;
+/* line 8, ../sass/partials/_navigation.scss */
+.navbar-default .site-title .navbar-brand {
+  color: #1d1d1d;
+  font-family: 'RobotoSlab-Bold';
+  font-size: 24px;
+  padding: 0px;
+  width: auto;
+  height: auto;
+  float: left;
+  position: relative;
 }
-/* line 20, ../sass/style.scss */
-.header-info p:last-child {
-  margin: 0;
+/* line 18, ../sass/partials/_navigation.scss */
+.navbar-default .site-title .site-description {
+  position: relative;
+  color: #858585;
+  font-family: 'OpenSans-Light';
+  font-size: 14px;
+  text-transform: uppercase;
+  float: left;
+  clear: both;
 }
-
-/***********************
-Navbar Properties
-***********************/
-/* line 27, ../sass/style.scss */
-.navbar-toggle {
-  margin: 22px 15px;
+/* line 28, ../sass/partials/_navigation.scss */
+.navbar-default .nav {
+  margin-top: -1px;
+}
+/* line 30, ../sass/partials/_navigation.scss */
+.navbar-default .nav li {
+  position: relative;
+  min-width: 130px;
+  height: 75px;
+  padding: 10px 10px;
+  text-align: center;
+}
+/* line 36, ../sass/partials/_navigation.scss */
+.navbar-default .nav li a {
+  color: #858585;
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 42, ../sass/partials/_navigation.scss */
+.navbar-default .nav li:hover, .navbar-default .nav li:focus, .navbar-default .nav li.active {
+  background-color: #858585;
+}
+/* line 44, ../sass/partials/_navigation.scss */
+.navbar-default .nav li:hover a, .navbar-default .nav li:focus a, .navbar-default .nav li.active a {
+  color: white;
 }

@@ -1,0 +1,52 @@
+.navbar-default{
+	background-color: $white;
+	height: 80px;
+	border-bottom: 5px solid $medium-gray;
+		.site-title{
+			float: left;
+			padding: 20px;
+			.navbar-brand{
+				color: $dark-gray;
+				font-family: 'RobotoSlab-Bold';
+				font-size: 24px;
+				padding: 0px;
+				width: auto;
+				height: auto;
+				float: left;
+				position: relative;
+			}
+			.site-description{
+				position: relative;
+				color: $medium-gray;
+				font-family: 'OpenSans-Light';
+				font-size: 14px;
+				text-transform: uppercase;
+				float: left;
+				clear: both;
+			}
+		}
+	.nav{
+		margin-top: -1px;
+		li{
+				position: relative;
+				min-width: 130px;
+				height: 75px;
+				padding: 10px 10px;
+				text-align: center;
+			a{
+				color: $medium-gray;
+				font-family: 'OpenSans-Regular';
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+			&:hover, &:focus, &.active{
+				background-color: $medium-gray;
+				a{
+					color: $white;	
+				}
+			}
+		}
+	}
+}
+
+
