@@ -4,6 +4,7 @@ Template Name: Full Width Page With Left Sidebar Only
  */
 get_header(); ?>
 	<section class="container-fluid contents">
+		<div class="row">
 		<div class="col-md-3 contents">
 			<?php get_sidebar(); ?>
 		</div>
@@ -23,9 +24,10 @@ get_header(); ?>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_title('<h3 class="entry-title">','</h3>'); ?>
 					</a>
-					<?php the_content('<div class="entry-content">','</div>'); ?>
+					<div class="entry-content"><?php the_content(); ?></div>
 				</article>
 			<?php endwhile; ?>
 		</div>
+	</div>
 	</section>
 <?php get_footer(); ?>

@@ -29,34 +29,3 @@
 	}
 }
 
-.before-footer{
-	padding-left: 15px;
-	.widget-content{
-		border: none;
-		border-radius: 0px;
-		margin-bottom: 20px;
-		padding: 0px;
-		label, h3{
-			text-transform: uppercase;
-			color: #FFF;
-			width: 100%;
-			background: none;
-			padding: 10px 10px;
-			margin-top: 0px;
-			text-align: left;
-			margin-left: 30px;
-			font-size: 14px;
-			font-weight: bold;	
-		}
-		ul{
-			list-style: none;
-			a{
-				color: #FDFDFD;
-				line-height: 25px;
-			}
-		}
-	}
-	#s{
-		margin-left: -70px;
-	}
-}
