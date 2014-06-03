@@ -4,15 +4,23 @@ Template Name: Full Width Page
 */
 get_header(); ?>
 	<section class="container-fluid contents">
-		<?php while(have_posts()) : the_post();?>
+		<?php 
+			if(is_front_page()) 
+			{
+				get_template_part('featured_content');
+			}
+		?>
+
+		<?php
+			// query_posts('category_name='); 
+			wp_reset_postdata();
+			while(have_posts()) : the_post();
+		?>
 			<article>
-				<h3 class="entry-header"><?php the_title(); ?></h3>
-				<p class="entry-content"><?php the_content(); ?> </p>
-				<?php 
-				if(comments_open() || get_comments_number()){
-					comments_template();
-				}
-				?>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_title('<h3 class="entry-header">','</h3>'); ?>
+				</a>
+				<?php the_content('<p class="entry-content">','</p>'); ?>
 			</article>
 		<?php endwhile; ?>
 	</section>

@@ -1,0 +1,32 @@
+.widget-content{
+	clear: both;
+	.widget-title{
+		font-family: 'OpenSans-SemiBold';
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.textwidget{
+		.contacts_footer{
+			position: relative;
+			clear: both;
+			.detail{
+				width: 90px;
+				height: auto;
+				font-family: 'OpenSans-Light';
+				font-size: 14px;
+				text-transform: uppercase;
+				float: left;
+				margin-bottom: 20px;
+			}
+			.info{
+				width: auto;
+				height: auto;
+				max-width: 130px;
+				font-family: 'OpenSans-Regular';
+				font-size: 14px;
+				float: left;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
