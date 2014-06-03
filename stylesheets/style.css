@@ -1,3 +1,11 @@
+/* line 3, ../sass/style.scss */
+.header,
+.footer,
+.contents {
+  padding: 15px;
+  text-align: justify;
+}
+
 @font-face {
   font-family: 'RobotoSlab-Bold';
   src: url("../fonts/RobotoSlab-Bold.ttf");
@@ -72,7 +80,7 @@
 .navbar .nav {
   margin-top: 0px;
 }
-/* line 33, ../sass/partials/_navigation.scss */
+/* line 34, ../sass/partials/_navigation.scss */
 .navbar .nav li {
   position: relative;
   min-width: 130px;
@@ -80,40 +88,46 @@
   padding: 10px 10px;
   text-align: center;
 }
-/* line 39, ../sass/partials/_navigation.scss */
+/* line 41, ../sass/partials/_navigation.scss */
+.navbar .nav li.active {
+  background-color: #858585;
+}
+/* line 43, ../sass/partials/_navigation.scss */
+.navbar .nav li.active a {
+  color: white;
+  background-color: #858585;
+}
+/* line 49, ../sass/partials/_navigation.scss */
+.navbar .nav li:hover, .navbar .nav li.active:hover {
+  background-color: #1d1d1d;
+}
+/* line 51, ../sass/partials/_navigation.scss */
+.navbar .nav li:hover a, .navbar .nav li.active:hover a {
+  color: white;
+  background-color: #1d1d1d;
+}
+/* line 57, ../sass/partials/_navigation.scss */
 .navbar .nav li a {
   color: #858585;
   font-family: 'OpenSans-Regular';
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 45, ../sass/partials/_navigation.scss */
-.navbar .nav li:hover, .navbar .nav li:focus, .navbar .nav li.active {
-  background-color: #858585;
-}
-/* line 47, ../sass/partials/_navigation.scss */
-.navbar .nav li:hover a, .navbar .nav li:focus a, .navbar .nav li.active a {
-  color: white;
-}
 
 /* line 1, ../sass/partials/_footer.scss */
-.widget-content {
-  clear: both;
+.before-footer {
+  background: #858585;
 }
 /* line 3, ../sass/partials/_footer.scss */
-.widget-content .widget-title {
-  font-family: 'OpenSans-SemiBold';
-  font-size: 18px;
-  text-transform: uppercase;
-}
-/* line 9, ../sass/partials/_footer.scss */
-.widget-content .textwidget .contacts_footer {
+.before-footer .contacts_before_footer {
   position: relative;
   clear: both;
+  color: #fff;
+  margin-top: 15px;
 }
-/* line 12, ../sass/partials/_footer.scss */
-.widget-content .textwidget .contacts_footer .detail {
-  width: 90px;
+/* line 8, ../sass/partials/_footer.scss */
+.before-footer .contacts_before_footer .detail {
+  width: 100px;
   height: auto;
   font-family: 'OpenSans-Light';
   font-size: 14px;
@@ -121,33 +135,27 @@
   float: left;
   margin-bottom: 20px;
 }
-/* line 21, ../sass/partials/_footer.scss */
-.widget-content .textwidget .contacts_footer .info {
+/* line 17, ../sass/partials/_footer.scss */
+.before-footer .contacts_before_footer .info {
   width: auto;
   height: auto;
-  max-width: 130px;
+  max-width: 160px;
   font-family: 'OpenSans-Regular';
   font-size: 14px;
   float: left;
   margin-bottom: 20px;
 }
 
-/* line 1, ../sass/partials/_search.scss */
-#searchform {
-  text-align: center;
+/* line 29, ../sass/partials/_footer.scss */
+.footer {
+  height: auto;
 }
-/* line 3, ../sass/partials/_search.scss */
-#searchform #searchsubmit {
-  visibility: hidden;
-  position: absolute;
-}
-/* line 7, ../sass/partials/_search.scss */
-#searchform #s {
-  border-radius: 8px;
-  background: #ededed;
-  border: 2px solid #858585;
-  padding: 5px 5px;
-  margin-top: 5px;
+/* line 31, ../sass/partials/_footer.scss */
+.footer p {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 0px;
+  margin-bottom: 0px;
 }
 
 /* line 1, ../sass/partials/_search.scss */
@@ -168,20 +176,20 @@
   margin-top: 5px;
 }
 
-/* line 3, ../sass/partials/_widget.scss */
+/* line 1, ../sass/partials/_widget.scss */
 .sidebar {
   list-style: none;
   padding-left: 0;
 }
-/* line 6, ../sass/partials/_widget.scss */
+/* line 4, ../sass/partials/_widget.scss */
 .sidebar .widget-content {
   border: 3px solid #858585;
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-/* line 12, ../sass/partials/_widget.scss */
+/* line 10, ../sass/partials/_widget.scss */
 .sidebar .widget-content label, .sidebar .widget-content h3 {
   text-transform: uppercase;
   color: white;
@@ -193,23 +201,76 @@
   font-size: 14px;
   font-weight: 500;
 }
-/* line 24, ../sass/partials/_widget.scss */
+/* line 22, ../sass/partials/_widget.scss */
 .sidebar .widget-content ul {
   list-style: none;
 }
-/* line 26, ../sass/partials/_widget.scss */
+/* line 24, ../sass/partials/_widget.scss */
 .sidebar .widget-content ul a {
   color: #2b2b2b;
   line-height: 25px;
 }
 
+/* line 32, ../sass/partials/_widget.scss */
+.before-footer {
+  padding-left: 15px;
+}
 /* line 34, ../sass/partials/_widget.scss */
-.col-md-3 {
-  padding-left: 0px;
-  padding-right: 0px;
+.before-footer .widget-content {
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+/* line 39, ../sass/partials/_widget.scss */
+.before-footer .widget-content label, .before-footer .widget-content h3 {
+  text-transform: uppercase;
+  color: #FFF;
+  width: 100%;
+  background: none;
+  padding: 10px 10px;
+  margin-top: 0px;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 51, ../sass/partials/_widget.scss */
+.before-footer .widget-content ul {
+  list-style: none;
+}
+/* line 53, ../sass/partials/_widget.scss */
+.before-footer .widget-content ul a {
+  color: #FDFDFD;
+  line-height: 25px;
+}
+/* line 59, ../sass/partials/_widget.scss */
+.before-footer #s {
+  margin-left: -70px;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 body {
   padding: 0px;
+}
+
+/* line 21, ../sass/style.scss */
+.navbar-default {
+  margin-bottom: 0px;
+}
+
+/***********************
+Sidebar Properties
+***********************/
+/* line 27, ../sass/style.scss */
+.sidebar {
+  padding-left: 0;
+}
+
+/***********************
+contents Properties
+***********************/
+/* line 34, ../sass/style.scss */
+.contents {
+  background: #fdfdfd;
 }

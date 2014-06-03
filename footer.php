@@ -1,9 +1,7 @@
-	<section class="container-fluid footer">
+	<section class="container-fluid before-footer">
 		<?php get_sidebar('footer'); ?>
-		<div class="row">
-			<div class="container-fluid">Blankslate Theme</div>
-		</div>
-		</section>
+	</section>
+	<div class="container-fluid footer"><p>Blankslate Theme</p></div>
 	<?php wp_footer(); ?>
 	</body>
 </html>
