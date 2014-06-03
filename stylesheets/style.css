@@ -41,6 +41,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 1, ../sass/partials/_navigation.scss */
 .navbar {
   background-color: white;
@@ -118,14 +125,50 @@
 .before-footer {
   background: #858585;
 }
-/* line 3, ../sass/partials/_footer.scss */
+/* line 4, ../sass/partials/_footer.scss */
+.before-footer .widget-content .widget-title, .before-footer .widget-content h3, .before-footer .widget-content label, .before-footer .widget-content .screen-reader-text {
+  margin-left: 0;
+  text-align: left;
+  font-family: 'OpenSans-Semibold';
+  font-size: 18px;
+}
+/* line 10, ../sass/partials/_footer.scss */
+.before-footer .widget-content #s {
+  width: 330px;
+  margin-left: -100px;
+}
+/* line 14, ../sass/partials/_footer.scss */
+.before-footer .widget-content ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+}
+/* line 20, ../sass/partials/_footer.scss */
+.before-footer .widget-content ul li {
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  list-style-position: inside;
+  list-style-type: none;
+  text-align: left;
+}
+/* line 27, ../sass/partials/_footer.scss */
+.before-footer .widget-content ul li a, .before-footer .widget-content ul li a:visited {
+  font-family: 'OpenSans-Light';
+  font-size: 14px;
+  color: #fcfcfc;
+}
+/* line 36, ../sass/partials/_footer.scss */
 .before-footer .contacts_before_footer {
   position: relative;
   clear: both;
-  color: #fff;
+  color: #fcfcfc;
   margin-top: 15px;
+  margin-left: 10px;
 }
-/* line 8, ../sass/partials/_footer.scss */
+/* line 42, ../sass/partials/_footer.scss */
 .before-footer .contacts_before_footer .detail {
   width: 100px;
   height: auto;
@@ -135,22 +178,23 @@
   float: left;
   margin-bottom: 20px;
 }
-/* line 17, ../sass/partials/_footer.scss */
+/* line 51, ../sass/partials/_footer.scss */
 .before-footer .contacts_before_footer .info {
   width: auto;
   height: auto;
   max-width: 160px;
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSans-SemiBold';
   font-size: 14px;
   float: left;
   margin-bottom: 20px;
+  text-align: left;
 }
 
-/* line 29, ../sass/partials/_footer.scss */
+/* line 64, ../sass/partials/_footer.scss */
 .footer {
   height: auto;
 }
-/* line 31, ../sass/partials/_footer.scss */
+/* line 66, ../sass/partials/_footer.scss */
 .footer p {
   font-weight: bold;
   font-size: 16px;
@@ -209,44 +253,6 @@
 .sidebar .widget-content ul a {
   color: #2b2b2b;
   line-height: 25px;
-}
-
-/* line 32, ../sass/partials/_widget.scss */
-.before-footer {
-  padding-left: 15px;
-}
-/* line 34, ../sass/partials/_widget.scss */
-.before-footer .widget-content {
-  border: none;
-  border-radius: 0px;
-  margin-bottom: 20px;
-  padding: 0px;
-}
-/* line 39, ../sass/partials/_widget.scss */
-.before-footer .widget-content label, .before-footer .widget-content h3 {
-  text-transform: uppercase;
-  color: #FFF;
-  width: 100%;
-  background: none;
-  padding: 10px 10px;
-  margin-top: 0px;
-  text-align: left;
-  margin-left: 30px;
-  font-size: 14px;
-  font-weight: bold;
-}
-/* line 51, ../sass/partials/_widget.scss */
-.before-footer .widget-content ul {
-  list-style: none;
-}
-/* line 53, ../sass/partials/_widget.scss */
-.before-footer .widget-content ul a {
-  color: #FDFDFD;
-  line-height: 25px;
-}
-/* line 59, ../sass/partials/_widget.scss */
-.before-footer #s {
-  margin-left: -70px;
 }
 
 /* line 16, ../sass/style.scss */

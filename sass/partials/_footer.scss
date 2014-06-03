@@ -1,10 +1,44 @@
 .before-footer{
 	background: #858585;
+	.widget-content{
+		.widget-title, h3, label, .screen-reader-text{
+			margin-left: 0;
+			text-align: left;
+			font-family: 'OpenSans-Semibold';
+			font-size: 18px;
+		}
+		#s{
+			width: 330px;
+			margin-left: -100px;
+		}
+		ul{
+			list-style-type: none;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			margin-left: 5px;
+			li{
+			margin: 0;
+			padding: 0;
+			margin-left: 5px;
+			list-style-position: inside;
+				list-style-type: none;
+				text-align: left;
+				a, a:visited{
+						font-family: 'OpenSans-Light';
+						font-size: 14px;
+						color: #fcfcfc;
+				}
+			}
+		}
+	}
+
 	.contacts_before_footer{
 		position: relative;
 		clear: both;
-		color: #fff;
+		color: #fcfcfc;
 		margin-top: 15px;
+		margin-left: 10px;
 		.detail{
 			width: 100px;
 			height: auto;
@@ -18,10 +52,11 @@
 			width: auto;
 			height: auto;
 			max-width: 160px;
-			font-family: 'OpenSans-Regular';
+			font-family: 'OpenSans-SemiBold';
 			font-size: 14px;
 			float: left;
 			margin-bottom: 20px;
+			text-align: left;
 		}
 	}
 }
