@@ -1,17 +1,12 @@
-@import "search";
-
 .sidebar{
 	list-style: none;
 	padding-left: 0;
-	.widget-title{
-		display: none;
-	}
 	.widget-content{
 		border: 3px solid #858585;
 		border-radius: 10px;
 		margin-bottom: 20px;
-		margin-left: 5px;
-		margin-right: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
 		label, h3{
 			text-transform: uppercase;
 			color: white;
@@ -34,8 +29,34 @@
 	}
 }
 
-.col-md-3{
-	padding-left: 0px;
-			padding-right: 0px;
-
+.before-footer{
+	padding-left: 15px;
+	.widget-content{
+		border: none;
+		border-radius: 0px;
+		margin-bottom: 20px;
+		padding: 0px;
+		label, h3{
+			text-transform: uppercase;
+			color: #FFF;
+			width: 100%;
+			background: none;
+			padding: 10px 10px;
+			margin-top: 0px;
+			text-align: left;
+			margin-left: 30px;
+			font-size: 14px;
+			font-weight: bold;	
+		}
+		ul{
+			list-style: none;
+			a{
+				color: #FDFDFD;
+				line-height: 25px;
+			}
+		}
+	}
+	#s{
+		margin-left: -70px;
+	}
 }
