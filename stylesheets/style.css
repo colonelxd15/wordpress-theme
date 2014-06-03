@@ -133,11 +133,14 @@
   font-size: 18px;
 }
 /* line 10, ../sass/partials/_footer.scss */
-.before-footer .widget-content #s {
-  width: 330px;
+.before-footer .widget-content #searchform #s {
+  max-width: 330px;
+  width: 100%;
   margin-left: -100px;
+  border-radius: 18px;
+  padding: 8px 8px;
 }
-/* line 14, ../sass/partials/_footer.scss */
+/* line 17, ../sass/partials/_footer.scss */
 .before-footer .widget-content ul {
   list-style-type: none;
   text-align: left;
@@ -145,7 +148,7 @@
   padding: 0;
   margin-left: 5px;
 }
-/* line 20, ../sass/partials/_footer.scss */
+/* line 23, ../sass/partials/_footer.scss */
 .before-footer .widget-content ul li {
   margin: 0;
   padding: 0;
@@ -154,13 +157,13 @@
   list-style-type: none;
   text-align: left;
 }
-/* line 27, ../sass/partials/_footer.scss */
+/* line 30, ../sass/partials/_footer.scss */
 .before-footer .widget-content ul li a, .before-footer .widget-content ul li a:visited {
   font-family: 'OpenSans-Light';
   font-size: 14px;
   color: #fcfcfc;
 }
-/* line 36, ../sass/partials/_footer.scss */
+/* line 39, ../sass/partials/_footer.scss */
 .before-footer .contacts_before_footer {
   position: relative;
   clear: both;
@@ -168,7 +171,7 @@
   margin-top: 15px;
   margin-left: 10px;
 }
-/* line 42, ../sass/partials/_footer.scss */
+/* line 45, ../sass/partials/_footer.scss */
 .before-footer .contacts_before_footer .detail {
   width: 100px;
   height: auto;
@@ -178,7 +181,7 @@
   float: left;
   margin-bottom: 20px;
 }
-/* line 51, ../sass/partials/_footer.scss */
+/* line 54, ../sass/partials/_footer.scss */
 .before-footer .contacts_before_footer .info {
   width: auto;
   height: auto;
@@ -190,11 +193,11 @@
   text-align: left;
 }
 
-/* line 64, ../sass/partials/_footer.scss */
+/* line 67, ../sass/partials/_footer.scss */
 .footer {
   height: auto;
 }
-/* line 66, ../sass/partials/_footer.scss */
+/* line 69, ../sass/partials/_footer.scss */
 .footer p {
   font-weight: bold;
   font-size: 16px;
