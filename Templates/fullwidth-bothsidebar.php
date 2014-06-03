@@ -23,7 +23,9 @@ get_header(); ?>
 					<a href="<?php the_permalink()?>">
 						<?php the_title('<h3 class="entry-title">','</h3>'); ?>
 					</a>
-					<?php the_content('<div class="entry-content">','</div>'); ?>
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div>
 				</article>
 			<?php endwhile; ?>
 		</div>

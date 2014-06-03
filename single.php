@@ -8,7 +8,9 @@
 				<?php while(have_posts()): the_post() ?>
 					<article>
 						<?php the_title('<h3 class="entry-title">','</h3>'); ?>
-						<?php the_content('<div class="entry-content">', '</div>'); ?>
+						<div class="entry-content">
+							<?php the_content(); ?>
+						</div>
 						<?php 
 							if(comments_open() || get_comments_number()){
 								comments_template();

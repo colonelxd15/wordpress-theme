@@ -12,15 +12,17 @@ get_header(); ?>
 		?>
 
 		<?php
-			// query_posts('category_name='); 
-			wp_reset_postdata();
+			query_posts('category_name='); 
+			// wp_reset_postdata();
 			while(have_posts()) : the_post();
 		?>
 			<article>
 				<a href="<?php the_permalink(); ?>">
 					<?php the_title('<h3 class="entry-header">','</h3>'); ?>
 				</a>
-				<?php the_content('<p class="entry-content">','</p>'); ?>
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
 			</article>
 		<?php endwhile; ?>
 	</section>
