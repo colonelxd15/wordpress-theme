@@ -5,7 +5,6 @@
 				<?php get_sidebar(); ?>
 			</div>
 			<div class="col-md-9 contents">
-				
 				<h1>
 					No Match Found
 				</h1>
