@@ -152,12 +152,39 @@ Footer Properties
 .before-footer {
   background: #858585;
 }
-
 /* line 56, ../sass/style.scss */
+.before-footer .contacts_before_footer {
+  position: relative;
+  clear: both;
+  color: #fff;
+  margin-top: 15px;
+}
+/* line 61, ../sass/style.scss */
+.before-footer .contacts_before_footer .detail {
+  width: 100px;
+  height: auto;
+  font-family: 'OpenSans-Light';
+  font-size: 14px;
+  text-transform: uppercase;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 70, ../sass/style.scss */
+.before-footer .contacts_before_footer .info {
+  width: auto;
+  height: auto;
+  max-width: 160px;
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 82, ../sass/style.scss */
 .footer {
   height: auto;
 }
-/* line 58, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .footer p {
   font-weight: bold;
   font-size: 16px;

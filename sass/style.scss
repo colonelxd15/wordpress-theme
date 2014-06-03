@@ -51,6 +51,32 @@ Footer Properties
 ***********************/
 .before-footer{
 	background: #858585;
+
+
+	.contacts_before_footer{
+		position: relative;
+		clear: both;
+		color: #fff;
+		margin-top: 15px;
+		.detail{
+			width: 100px;
+			height: auto;
+			font-family: 'OpenSans-Light';
+			font-size: 14px;
+			text-transform: uppercase;
+			float: left;
+			margin-bottom: 20px;
+		}
+		.info{
+			width: auto;
+			height: auto;
+			max-width: 160px;
+			font-family: 'OpenSans-Regular';
+			font-size: 14px;
+			float: left;
+			margin-bottom: 20px;
+		}
+	}
 }
 
 .footer{
