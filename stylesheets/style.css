@@ -224,6 +224,11 @@
   margin-top: 5px;
 }
 
+/* line 16, ../sass/partials/_search.scss */
+#s:focus {
+  outline: none;
+}
+
 /* line 1, ../sass/partials/_widget.scss */
 .sidebar {
   list-style: none;
