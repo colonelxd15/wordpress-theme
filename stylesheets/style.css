@@ -108,7 +108,7 @@
 
 /* line 1, ../sass/partials/_footer.scss */
 .widget-content {
-  clear: both;
+  float: left;
 }
 /* line 3, ../sass/partials/_footer.scss */
 .widget-content .widget-title {
