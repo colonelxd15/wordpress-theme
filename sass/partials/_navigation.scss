@@ -30,26 +30,36 @@
 		}
 	.nav{
 		margin-top: 0px;
+
 		li{
-				position: relative;
-				min-width: 130px;
-				height: 75px;
-				padding: 10px 10px;
-				text-align: center;
+			position: relative;
+			min-width: 130px;
+			height: 75px;
+			padding: 10px 10px;
+			text-align: center;
+
+			&.active{
+				background-color: $medium-gray;
+				a{
+					color: $white;
+					background-color: $medium-gray;
+				}
+			}
+
+			&:hover, &.active:hover{
+				background-color: $dark-gray;
+				a{
+					color: $white;
+					background-color: $dark-gray;
+				}
+			}
+
 			a{
 				color: $medium-gray;
 				font-family: 'OpenSans-Regular';
 				font-size: 14px;
 				text-transform: uppercase;
 			}
-			&:hover, &:focus, &.active{
-				background-color: $medium-gray;
-				a{
-					color: $white;	
-				}
-			}
 		}
 	}
 }
-
-

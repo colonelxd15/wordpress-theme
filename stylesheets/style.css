@@ -80,7 +80,7 @@
 .navbar .nav {
   margin-top: 0px;
 }
-/* line 33, ../sass/partials/_navigation.scss */
+/* line 34, ../sass/partials/_navigation.scss */
 .navbar .nav li {
   position: relative;
   min-width: 130px;
@@ -88,20 +88,30 @@
   padding: 10px 10px;
   text-align: center;
 }
-/* line 39, ../sass/partials/_navigation.scss */
+/* line 41, ../sass/partials/_navigation.scss */
+.navbar .nav li.active {
+  background-color: #858585;
+}
+/* line 43, ../sass/partials/_navigation.scss */
+.navbar .nav li.active a {
+  color: white;
+  background-color: #858585;
+}
+/* line 49, ../sass/partials/_navigation.scss */
+.navbar .nav li:hover, .navbar .nav li.active:hover {
+  background-color: #1d1d1d;
+}
+/* line 51, ../sass/partials/_navigation.scss */
+.navbar .nav li:hover a, .navbar .nav li.active:hover a {
+  color: white;
+  background-color: #1d1d1d;
+}
+/* line 57, ../sass/partials/_navigation.scss */
 .navbar .nav li a {
   color: #858585;
   font-family: 'OpenSans-Regular';
   font-size: 14px;
   text-transform: uppercase;
-}
-/* line 45, ../sass/partials/_navigation.scss */
-.navbar .nav li:hover, .navbar .nav li:focus, .navbar .nav li.active {
-  background-color: #858585;
-}
-/* line 47, ../sass/partials/_navigation.scss */
-.navbar .nav li:hover a, .navbar .nav li:focus a, .navbar .nav li.active a {
-  color: white;
 }
 
 /* line 1, ../sass/partials/_footer.scss */
