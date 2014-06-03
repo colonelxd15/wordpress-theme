@@ -25,8 +25,8 @@
   border: 3px solid #858585;
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /* line 11, ../sass/_widget.scss */
 .sidebar .widget-content label, .sidebar .widget-content h3 {
@@ -51,12 +51,44 @@
 }
 
 /* line 33, ../sass/_widget.scss */
-.col-md-3 {
-  padding-left: 0px;
-  padding-right: 0px;
+.before-footer {
+  padding-left: 15px;
+}
+/* line 35, ../sass/_widget.scss */
+.before-footer .widget-content {
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+/* line 40, ../sass/_widget.scss */
+.before-footer .widget-content label, .before-footer .widget-content h3 {
+  text-transform: uppercase;
+  color: #FFF;
+  width: 100%;
+  background: none;
+  padding: 10px 10px;
+  margin-top: 0px;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 52, ../sass/_widget.scss */
+.before-footer .widget-content ul {
+  list-style: none;
+}
+/* line 54, ../sass/_widget.scss */
+.before-footer .widget-content ul a {
+  color: #FDFDFD;
+  line-height: 25px;
+}
+/* line 60, ../sass/_widget.scss */
+.before-footer #s {
+  margin-left: -70px;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 5, ../sass/style.scss */
 .header,
 .footer,
 .contents {
@@ -64,22 +96,22 @@
   text-align: justify;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 .header-info {
   width: 300px;
   padding: 15px;
 }
-/* line 13, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 .header-info .logo-placeholder {
   float: left;
   margin-right: 20px;
 }
-/* line 16, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .header-info .logo-placeholder img {
   width: 50px;
   height: 50px;
 }
-/* line 21, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .header-info p:last-child {
   margin: 0;
 }
@@ -87,15 +119,48 @@
 /***********************
 Navbar Properties
 ***********************/
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .navbar-toggle {
   margin: 22px 15px;
+}
+
+/* line 33, ../sass/style.scss */
+.navbar-default {
+  margin-bottom: 0px;
 }
 
 /***********************
 Sidebar Properties
 ***********************/
-/* line 34, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .sidebar {
   padding-left: 0;
+}
+
+/***********************
+contents Properties
+***********************/
+/* line 46, ../sass/style.scss */
+.contents {
+  background: #fdfdfd;
+}
+
+/***********************
+Footer Properties
+***********************/
+/* line 52, ../sass/style.scss */
+.before-footer {
+  background: #858585;
+}
+
+/* line 56, ../sass/style.scss */
+.footer {
+  height: auto;
+}
+/* line 58, ../sass/style.scss */
+.footer p {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 0px;
+  margin-bottom: 0px;
 }
