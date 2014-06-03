@@ -8,15 +8,22 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 		</div>
 		<div class="col-md-9 contents">
-			<?php while(have_posts()): the_post() ?>
+		<?php 
+			if(is_front_page()) 
+			{
+				get_template_part('featured_content');
+			}
+		?>
+		<?php 
+			// query_posts('category_name=');
+			wp_reset_postdata(); 
+			while(have_posts()): the_post() 
+		?>
 				<article>
-					<h3 class="entry-title"><?php the_title(); ?></h3>
-					<div class="entry-content"><?php the_content(); ?></div>
-					<?php 
-						if(comments_open() || get_comments_number()){
-							comments_template();
-						}
-					?>
+					<a href="<?php the_permalink(); ?>">
+						<?php the_title('<h3 class="entry-title">','</h3>'); ?>
+					</a>
+					<?php the_content('<div class="entry-content">','</div>'); ?>
 				</article>
 			<?php endwhile; ?>
 		</div>
