@@ -1,6 +1,9 @@
-.navbar-default{
+.navbar{
 	background-color: $white;
 	height: 80px;
+	border: 0px;
+	border-radius: 0px;
+	border-color: $white;
 	border-bottom: 5px solid $medium-gray;
 		.site-title{
 			float: left;
@@ -26,7 +29,7 @@
 			}
 		}
 	.nav{
-		margin-top: -1px;
+		margin-top: 0px;
 		li{
 				position: relative;
 				min-width: 130px;
