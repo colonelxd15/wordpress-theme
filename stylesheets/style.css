@@ -198,9 +198,10 @@
   height: auto;
 }
 /* line 69, ../sass/partials/_footer.scss */
-.footer p {
-  font-weight: bold;
-  font-size: 16px;
+.footer .footertext {
+  color: #1d1d1d;
+  font-family: 'RobotoSlab-Light';
+  font-size: 18px;
   padding: 5px 0px;
   margin-bottom: 0px;
 }
