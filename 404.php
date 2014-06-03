@@ -5,17 +5,10 @@
 				<?php get_sidebar(); ?>
 			</div>
 			<div class="col-md-9 contents">
-				<?php while(have_posts()): the_post() ?>
-					<article>
-						<?php the_title('<h3 class="entry-title">','</h3>'); ?>
-						<?php the_content('<div class="entry-content">', '</div>'); ?>
-						<?php 
-							if(comments_open() || get_comments_number()){
-								comments_template();
-							}
-						?>
-					</article>
-				<?php endwhile; ?>
+				
+				<h1>
+					No Match Found
+				</h1>
 			</div>
 		</div>
 	</section>
