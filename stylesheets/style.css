@@ -264,6 +264,34 @@
   line-height: 25px;
 }
 
+/* line 33, ../sass/partials/_widget.scss */
+#wp-calendar {
+  width: 100%;
+  margin: 10px;
+}
+/* line 36, ../sass/partials/_widget.scss */
+#wp-calendar caption {
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-left: -20px;
+}
+/* line 41, ../sass/partials/_widget.scss */
+#wp-calendar a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+}
+/* line 46, ../sass/partials/_widget.scss */
+#wp-calendar a:hover {
+  text-decoration: none;
+  color: black;
+}
+/* line 51, ../sass/partials/_widget.scss */
+#wp-calendar tr {
+  line-height: 30px;
+}
+
 /* line 16, ../sass/style.scss */
 body {
   padding: 0px;
