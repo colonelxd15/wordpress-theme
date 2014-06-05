@@ -47,7 +47,10 @@ get_header(); ?>
 						edit_post_link(); 
 					}
 				?>
-			<?php endwhile; ?>
+			<?php 
+				pagination();
+				endwhile; 
+			?>
 		</div>
 		<div class="col-md-3 contents">
 			<?php get_sidebar('right'); ?>
