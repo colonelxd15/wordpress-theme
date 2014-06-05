@@ -222,6 +222,8 @@
   border: 2px solid #858585;
   padding: 5px 5px;
   margin-top: 5px;
+  max-width: 300px;
+  width: 90%;
 }
 
 /* line 1, ../sass/partials/_widget.scss */
@@ -252,11 +254,28 @@
 /* line 22, ../sass/partials/_widget.scss */
 .sidebar .widget-content ul {
   list-style: none;
+  padding: 0 15px;
 }
-/* line 24, ../sass/partials/_widget.scss */
+/* line 25, ../sass/partials/_widget.scss */
 .sidebar .widget-content ul a {
   color: #2b2b2b;
   line-height: 25px;
+}
+/* line 30, ../sass/partials/_widget.scss */
+.sidebar .widget-content #calendar_wrap {
+  padding: 0 15px;
+}
+/* line 32, ../sass/partials/_widget.scss */
+.sidebar .widget-content #calendar_wrap #wp-calendar {
+  width: 100%;
+}
+/* line 34, ../sass/partials/_widget.scss */
+.sidebar .widget-content #calendar_wrap #wp-calendar caption {
+  margin-bottom: 10px;
+}
+/* line 38, ../sass/partials/_widget.scss */
+.sidebar .widget-content #calendar_wrap td, .sidebar .widget-content #calendar_wrap th {
+  text-align: right;
 }
 
 /* line 16, ../sass/style.scss */
@@ -291,5 +310,5 @@ contents Properties
 }
 /* line 40, ../sass/style.scss */
 .contents .entry-content {
-  width: 1000px;
+  width: 800px;
 }
