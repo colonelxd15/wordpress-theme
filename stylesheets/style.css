@@ -340,8 +340,12 @@ contents Properties
 .contents .entry-content {
   width: 800px;
 }
+/* line 45, ../sass/style.scss */
+.contents.col-md-6 .entry-content {
+  width: inherit;
+}
 
-/* line 50, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 a,
 a:hover,
 a:active,

@@ -37,6 +37,12 @@ get_header(); ?>
 						?>
 					</div>
 				</article>
+				<?php 
+					if(!is_page())
+					{
+						edit_post_link(); 
+					}
+				?>
 			<?php endwhile; ?>
 		</div>
 		<div class="col-md-3 contents">

@@ -41,6 +41,11 @@ contents Properties
 		// width: 1000px;
 		width: 800px;
 	}
+	&.col-md-6{
+		.entry-content{
+			width: inherit;
+		}
+	}
 }
 a,
 a:hover,

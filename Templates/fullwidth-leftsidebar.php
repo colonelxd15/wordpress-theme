@@ -41,7 +41,12 @@ get_header(); ?>
 						?>
 					</div>
 				</article>
-				<?php edit_post_link(); ?>
+				<?php 
+					if(!is_page())
+					{
+						edit_post_link(); 
+					}
+				?>
 			<?php endwhile; ?>
 		</div>
 	</div>

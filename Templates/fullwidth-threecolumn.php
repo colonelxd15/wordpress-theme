@@ -36,6 +36,12 @@ get_header(); ?>
 					?>
 				</div>
 			</article>
+			<?php 
+				if(!is_page())
+				{
+					edit_post_link(); 
+				}
+			?>
 		<?php endwhile; ?>
 	</section>
 <?php get_footer(); ?>

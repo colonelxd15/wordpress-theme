@@ -15,9 +15,13 @@ get_header(); ?>
 					wp_reset_postdata(); 
 				}
 			?>
+			<?php if(!is_page()) {?>
+				<h2> Recent Post </h2>
+			<?php }?>	
 			<?php 
 				while(have_posts()): the_post() 
 			?>
+
 				<article>
 					<?php if(!is_page()) {?>
 						<a href="<?php the_permalink(); ?>">
@@ -37,6 +41,12 @@ get_header(); ?>
 						?>
 					</div>
 				</article>
+				<?php 
+					if(!is_page())
+					{
+						edit_post_link(); 
+					}
+				?>
 			<?php endwhile; ?>
 		</div>
 		<div class="col-md-3 contents">
