@@ -19,11 +19,22 @@ get_header(); ?>
 				while(have_posts()): the_post() 
 			?>
 				<article>
-					<a href="<?php the_permalink()?>">
+					<?php if(!is_page()) {?>
+						<a href="<?php the_permalink(); ?>">
+					<?php }?>
 						<?php the_title('<h3 class="entry-title">','</h3>'); ?>
-					</a>
+					<?php if(!is_page()) {?>
+						</a>
+					<?php }?>
 					<div class="entry-content">
-						<?php the_content(); ?>
+						<?php 
+							if(is_page()){
+								the_content();
+							}
+							else{
+								the_excerpt();	
+							}
+						?>
 					</div>
 				</article>
 			<?php endwhile; ?>
