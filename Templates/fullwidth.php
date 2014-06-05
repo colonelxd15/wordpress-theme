@@ -12,8 +12,6 @@ get_header(); ?>
 		?>
 
 		<?php
-			query_posts('category_name='); 
-			// wp_reset_postdata();
 			while(have_posts()) : the_post();
 		?>
 			<article>

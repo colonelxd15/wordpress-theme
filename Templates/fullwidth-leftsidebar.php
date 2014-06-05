@@ -13,11 +13,10 @@ get_header(); ?>
 			if(is_front_page()) 
 			{
 				get_template_part('featured_content');
+				wp_reset_postdata(); 
 			}
 		?>
 		<?php 
-			query_posts('category_name=');
-			//wp_reset_postdata(); 
 			while(have_posts()): the_post() 
 		?>
 				<article>

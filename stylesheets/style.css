@@ -206,6 +206,11 @@
   margin-bottom: 0px;
 }
 
+/* line 79, ../sass/partials/_footer.scss */
+.sidebar.footer .widget-content ul {
+  padding: 0;
+}
+
 /* line 1, ../sass/partials/_search.scss */
 #searchform {
   text-align: center;
