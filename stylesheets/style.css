@@ -226,7 +226,7 @@
   width: 90%;
 }
 
-/* line 16, ../sass/partials/_search.scss */
+/* line 18, ../sass/partials/_search.scss */
 #s:focus {
   outline: none;
 }
@@ -270,45 +270,35 @@
 .sidebar .widget-content #calendar_wrap {
   padding: 0 15px;
 }
-/* line 32, ../sass/partials/_widget.scss */
-.sidebar .widget-content #calendar_wrap #wp-calendar {
-  width: 100%;
-}
-/* line 34, ../sass/partials/_widget.scss */
-.sidebar .widget-content #calendar_wrap #wp-calendar caption {
-  margin-bottom: 10px;
-}
-/* line 38, ../sass/partials/_widget.scss */
-.sidebar .widget-content #calendar_wrap td, .sidebar .widget-content #calendar_wrap th {
-  text-align: right;
-}
 
-/* line 33, ../sass/partials/_widget.scss */
+/* line 37, ../sass/partials/_widget.scss */
 #wp-calendar {
   width: 100%;
-  margin: 10px;
 }
-/* line 36, ../sass/partials/_widget.scss */
+/* line 39, ../sass/partials/_widget.scss */
 #wp-calendar caption {
   margin-bottom: 20px;
   font-weight: bold;
-  margin-left: -20px;
 }
-/* line 41, ../sass/partials/_widget.scss */
+/* line 43, ../sass/partials/_widget.scss */
 #wp-calendar a {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 10px;
 }
-/* line 46, ../sass/partials/_widget.scss */
+/* line 48, ../sass/partials/_widget.scss */
 #wp-calendar a:hover {
   text-decoration: none;
   color: black;
 }
-/* line 51, ../sass/partials/_widget.scss */
+/* line 53, ../sass/partials/_widget.scss */
 #wp-calendar tr {
   line-height: 30px;
+}
+/* line 56, ../sass/partials/_widget.scss */
+#wp-calendar td, #wp-calendar th {
+  text-align: right;
 }
 
 /* line 16, ../sass/style.scss */

@@ -29,15 +29,6 @@
 		}
 		#calendar_wrap{
 			padding: 0 15px; //.
-			#wp-calendar{
-				width: 100%;
-				caption{
-					margin-bottom: 10px;
-				}
-			}
-			td,th{
-				text-align: right;
-			}
 		}
 	}
 }
@@ -45,11 +36,9 @@
 
 #wp-calendar{
 	width: 100%;
-	margin: 10px;
 	caption{
 		margin-bottom: 20px;
 		font-weight: bold;
-		margin-left: -20px;
 	}
 	a{
 		color: white;
@@ -63,6 +52,9 @@
 	}
 	tr{
 		line-height: 30px;
+	}
+	td,th{
+		text-align: right;
 	}
 }
 
