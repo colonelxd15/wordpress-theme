@@ -1,6 +1,6 @@
 .sidebar{
 	list-style: none;
-	padding-left: 0;
+	padding-left: 0; //.
 	.widget-content{
 		border: 3px solid #858585;
 		border-radius: 10px;
@@ -21,10 +21,14 @@
 		}
 		ul{
 			list-style: none;
+			padding: 0 15px; //.
 			a{
 				color: #2b2b2b;
 				line-height: 25px;
 			}
+		}
+		#calendar_wrap{
+			padding: 0 15px; //.
 		}
 	}
 }
@@ -32,11 +36,9 @@
 
 #wp-calendar{
 	width: 100%;
-	margin: 10px;
 	caption{
 		margin-bottom: 20px;
 		font-weight: bold;
-		margin-left: -20px;
 	}
 	a{
 		color: white;
@@ -50,6 +52,9 @@
 	}
 	tr{
 		line-height: 30px;
+	}
+	td,th{
+		text-align: right;
 	}
 }
 

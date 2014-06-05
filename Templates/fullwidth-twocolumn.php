@@ -8,21 +8,43 @@ get_header(); ?>
 			if(is_front_page()) 
 			{
 				get_template_part('featured_content');
+				wp_reset_postdata(); 
 			}
 		?>
+		<?php if(!is_page()) {?>
+			<h2> Recent Post </h2>
+		<?php }?>	
 		<?php 
-			query_posts('category_name=');
-			// wp_reset_postdata(); 
 			while(have_posts()): the_post() 
 		?>
 			<article class="col-md-6">
-				<a href="<?php the_permalink(); ?>">
+				<?php if(!is_page()) {?>
+					<a href="<?php the_permalink(); ?>">
+				<?php }?>
 					<?php the_title('<h3 class="entry-title">','</h3>'); ?>
-				</a>
+				<?php if(!is_page()) {?>
+					</a>
+				<?php }?>
 				<div class="entry-content">
-					<?php the_content(); ?>
+					<?php 
+						if(is_page()){
+							the_content();
+						}
+						else{
+							the_excerpt();	
+						}
+					?>
 				</div>
 			</article>
-		<?php endwhile; ?>
+			<?php 
+				if(!is_page())
+				{
+					edit_post_link(); 
+				}
+			?>
+		<?php 
+			pagination();
+			endwhile; 
+		?>
 	</section>
 <?php get_footer(); ?>

@@ -24,8 +24,8 @@
 				</a>
 				<div class="entry-content">
 					<?php 
-						the_content(); 
-						// the_excerpt();
+						// the_content(); 
+						the_excerpt();
 					?>
 				</div>
 			</article>

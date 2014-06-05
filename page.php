@@ -7,15 +7,22 @@
 			<div class="col-md-9 contents">
 				<?php while(have_posts()): the_post() ?>
 					<article>
+						<?php if(!is_page()) {?>
 						<a href="<?php the_permalink(); ?>">
+						<?php }?>
 							<?php the_title('<h3 class="entry-title">','</h3>'); ?>
-						</a>
+						<?php if(!is_page()) {?>
+							</a>
+						<?php }?>
 						<div class="entry-content">
 							<?php the_content(); ?>
 						</div>
 						<?php 
-							if(comments_open() || get_comments_number()){
-								comments_template();
+							if(!is_page()){
+								if(comments_open() || get_comments_number()){
+									edit_post_link();
+									comments_template();
+								}
 							}
 						?>
 					</article>

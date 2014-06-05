@@ -248,6 +248,11 @@
   margin-bottom: 0px;
 }
 
+/* line 79, ../sass/partials/_footer.scss */
+.sidebar.footer .widget-content ul {
+  padding: 0;
+}
+
 /* line 1, ../sass/partials/_search.scss */
 #searchform {
   text-align: center;
@@ -264,9 +269,11 @@
   border: 2px solid #858585;
   padding: 5px 5px;
   margin-top: 5px;
+  max-width: 300px;
+  width: 90%;
 }
 
-/* line 16, ../sass/partials/_search.scss */
+/* line 18, ../sass/partials/_search.scss */
 #s:focus {
   outline: none;
 }
@@ -299,39 +306,46 @@
 /* line 22, ../sass/partials/_widget.scss */
 .sidebar .widget-content ul {
   list-style: none;
+  padding: 0 15px;
 }
-/* line 24, ../sass/partials/_widget.scss */
+/* line 25, ../sass/partials/_widget.scss */
 .sidebar .widget-content ul a {
   color: #2b2b2b;
   line-height: 25px;
 }
+/* line 30, ../sass/partials/_widget.scss */
+.sidebar .widget-content #calendar_wrap {
+  padding: 0 15px;
+}
 
-/* line 33, ../sass/partials/_widget.scss */
+/* line 37, ../sass/partials/_widget.scss */
 #wp-calendar {
   width: 100%;
-  margin: 10px;
 }
-/* line 36, ../sass/partials/_widget.scss */
+/* line 39, ../sass/partials/_widget.scss */
 #wp-calendar caption {
   margin-bottom: 20px;
   font-weight: bold;
-  margin-left: -20px;
 }
-/* line 41, ../sass/partials/_widget.scss */
+/* line 43, ../sass/partials/_widget.scss */
 #wp-calendar a {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 10px;
 }
-/* line 46, ../sass/partials/_widget.scss */
+/* line 48, ../sass/partials/_widget.scss */
 #wp-calendar a:hover {
   text-decoration: none;
   color: black;
 }
-/* line 51, ../sass/partials/_widget.scss */
+/* line 53, ../sass/partials/_widget.scss */
 #wp-calendar tr {
   line-height: 30px;
+}
+/* line 56, ../sass/partials/_widget.scss */
+#wp-calendar td, #wp-calendar th {
+  text-align: right;
 }
 
 /* line 16, ../sass/style.scss */
@@ -367,5 +381,20 @@ contents Properties
 }
 /* line 41, ../sass/style.scss */
 .contents .entry-content {
-  width: 1000px;
+  width: 800px;
+}
+/* line 45, ../sass/style.scss */
+.contents.col-md-6 .entry-content {
+  width: inherit;
+}
+
+/* line 55, ../sass/style.scss */
+a,
+a:hover,
+a:active,
+a:link,
+a:focus,
+a:visited {
+  color: #428BCA;
+  text-decoration: none;
 }
