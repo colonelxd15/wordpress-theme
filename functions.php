@@ -22,12 +22,6 @@
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'));
 	}
-	//Register and get jQuery from GoogleCDN
-	// function jqueryjs(){
-	// 	wp_deregister_script('jquery');
-	// 	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', false, '1.11.1',true); //loads to footer
-	// 	wp_enqueue_script('jquery');
-	// }
 
 	//Register local Bootstrap
 	function wpt_register_js() {
