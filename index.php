@@ -10,6 +10,9 @@
 			get_template_part('featured_content');
 		}
 	?>
+	<?php if(!is_page()) {?>
+		<h2> Recent Post </h2>
+	<?php }?>	
 	<?php 
 		query_posts('category_name=');
 		//wp_reset_postdata(); 
@@ -20,7 +23,10 @@
 					<?php the_title('<h3 class="entry-title">','</h3>'); ?>
 				</a>
 				<div class="entry-content">
-					<?php the_content(); ?>
+					<?php 
+						the_content(); 
+						// the_excerpt();
+					?>
 				</div>
 			</article>
 		<?php endwhile; ?>

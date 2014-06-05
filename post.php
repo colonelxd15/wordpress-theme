@@ -19,7 +19,10 @@
 					<?php the_title('<h3 class="entry-title">','</h3>'); ?>
 				</a>
 				<div class="entry-content">
-					<?php the_content(); ?>
+					<?php 
+						// the_content(); 
+						the_excerpt();
+					?>
 				</div>
 			</article>
 		<?php endwhile; ?>

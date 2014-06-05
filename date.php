@@ -5,12 +5,6 @@
 	</div>
 	<div class="col-md-9 contents">
 	<?php 
-		if(is_front_page()) 
-		{
-			get_template_part('featured_content');
-		}
-	?>
-	<?php 
 		wp_reset_postdata(); 
 		while(have_posts()): the_post() 
 	?>
@@ -19,7 +13,7 @@
 					<?php the_title('<h3 class="entry-title">','</h3>'); ?>
 				</a>
 				<div class="entry-content">
-					<?php the_content(); ?>
+					<?php the_excerpt(); ?>
 				</div>
 			</article>
 		<?php endwhile; ?>

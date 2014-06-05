@@ -340,3 +340,14 @@ contents Properties
 .contents .entry-content {
   width: 800px;
 }
+
+/* line 50, ../sass/style.scss */
+a,
+a:hover,
+a:active,
+a:link,
+a:focus,
+a:visited {
+  color: #428BCA;
+  text-decoration: none;
+}
