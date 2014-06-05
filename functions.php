@@ -56,8 +56,8 @@
                 'theme_location'    => 'primary',
                 'depth'             => 2,
                 'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse',
-        		'container_id'      => 'navbar-collapse-1',
+                'container_class'   => 'navigation-class',
+        		'container_id'      => 'navigation-id',
                 'menu_class'        => 'nav navbar-nav navbar-right',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())

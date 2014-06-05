@@ -50,6 +50,7 @@
 
 /* line 1, ../sass/partials/_navigation.scss */
 .navbar {
+  z-index: 10;
   background-color: white;
   height: 80px;
   border: 0px;
@@ -57,12 +58,12 @@
   border-color: white;
   border-bottom: 5px solid #858585;
 }
-/* line 8, ../sass/partials/_navigation.scss */
+/* line 9, ../sass/partials/_navigation.scss */
 .navbar .site-title {
   float: left;
   padding: 20px;
 }
-/* line 11, ../sass/partials/_navigation.scss */
+/* line 12, ../sass/partials/_navigation.scss */
 .navbar .site-title .navbar-brand {
   color: #1d1d1d;
   font-family: 'RobotoSlab-Bold';
@@ -73,7 +74,7 @@
   float: left;
   position: relative;
 }
-/* line 21, ../sass/partials/_navigation.scss */
+/* line 22, ../sass/partials/_navigation.scss */
 .navbar .site-title .site-description {
   position: relative;
   color: #858585;
@@ -83,11 +84,12 @@
   float: left;
   clear: both;
 }
-/* line 31, ../sass/partials/_navigation.scss */
+/* line 32, ../sass/partials/_navigation.scss */
 .navbar .nav {
   margin-top: 0px;
+  background: #fff;
 }
-/* line 34, ../sass/partials/_navigation.scss */
+/* line 35, ../sass/partials/_navigation.scss */
 .navbar .nav li {
   position: relative;
   min-width: 130px;
@@ -95,25 +97,25 @@
   padding: 10px 10px;
   text-align: center;
 }
-/* line 41, ../sass/partials/_navigation.scss */
+/* line 42, ../sass/partials/_navigation.scss */
 .navbar .nav li.active {
   background-color: #858585;
 }
-/* line 43, ../sass/partials/_navigation.scss */
+/* line 44, ../sass/partials/_navigation.scss */
 .navbar .nav li.active a {
   color: white;
   background-color: #858585;
 }
-/* line 49, ../sass/partials/_navigation.scss */
+/* line 50, ../sass/partials/_navigation.scss */
 .navbar .nav li:hover, .navbar .nav li.active:hover {
   background-color: #1d1d1d;
 }
-/* line 51, ../sass/partials/_navigation.scss */
+/* line 52, ../sass/partials/_navigation.scss */
 .navbar .nav li:hover a, .navbar .nav li.active:hover a {
   color: white;
   background-color: #1d1d1d;
 }
-/* line 57, ../sass/partials/_navigation.scss */
+/* line 58, ../sass/partials/_navigation.scss */
 .navbar .nav li a {
   color: #858585;
   font-family: 'OpenSans-Regular';
@@ -121,6 +123,46 @@
   text-transform: uppercase;
 }
 
+/***********
+ Navigation Media Queries
+***********/
+@media screen and (max-width: 700px) {
+  /* line 73, ../sass/partials/_navigation.scss */
+  .navigation-class {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -25%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /* line 88, ../sass/partials/_navigation.scss */
+  .animate-nav {
+    margin-right: 25%;
+  }
+
+  /* line 91, ../sass/partials/_navigation.scss */
+  .navbar-toggle-animate {
+    margin-right: 26%;
+  }
+
+  /* line 94, ../sass/partials/_navigation.scss */
+  .navbar-toggle {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
 /* line 1, ../sass/partials/_footer.scss */
 .before-footer {
   background: #858585;
@@ -295,9 +337,10 @@
 /* line 16, ../sass/style.scss */
 body {
   padding: 0px;
+  overflow-x: hidden;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .navbar-default {
   margin-bottom: 0px;
 }
@@ -305,7 +348,7 @@ body {
 /***********************
 Sidebar Properties
 ***********************/
-/* line 27, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .sidebar {
   padding-left: 0;
 }
@@ -313,16 +356,16 @@ Sidebar Properties
 /***********************
 contents Properties
 ***********************/
-/* line 34, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .contents {
   background: #fdfdfd;
 }
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .contents .row {
   margin-left: 100px;
   margin-right: 100px;
 }
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .contents .entry-content {
   width: 1000px;
 }
