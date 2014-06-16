@@ -14,6 +14,12 @@ jQuery(document).ready(function($) {
         $(this).attr('placeholder', $(this).data('holder'));
     });
 
+    $('.navbar-toggle').on('click', function(){
+    	$(this).toggleClass('navbar-toggle-animate');
+    	$('.navigation-class').toggleClass('animate-nav');
+
+    });
+
 });
 
 
