@@ -43,7 +43,11 @@ get_header(); ?>
 						edit_post_link(); 
 					}
 				?>
-			<?php endwhile; ?>
+				pagination();
+			<?php 
+				pagination();
+				endwhile; 
+			?>
 		</div>
 		<div class="col-md-3 contents">
 			<?php get_sidebar('right'); ?>

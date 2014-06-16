@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <section class="container-fluid contents">
+	<!-- <div class="row"> -->
 	<div class="col-md-3 contents">
 		<?php get_sidebar(); ?>
 	</div>
@@ -27,5 +28,6 @@
 			</article>
 		<?php endwhile; ?>
 	</div>
+<!-- </div> -->
 </section>
 <?php get_footer(); ?>

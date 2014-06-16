@@ -82,6 +82,4 @@
 
 		wp_link_pages( $defaults );
 	}
-
-
 ?>

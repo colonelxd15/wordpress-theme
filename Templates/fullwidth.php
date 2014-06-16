@@ -18,6 +18,7 @@ get_header(); ?>
 			while(have_posts()) : the_post();
 		?>
 			<article>
+				<div class="col-md-6 col-md-offset-3">
 				<?php if(!is_page()) {?>
 					<a href="<?php the_permalink(); ?>">
 				<?php }?>
@@ -42,6 +43,7 @@ get_header(); ?>
 					edit_post_link(); 
 				}
 			?>
+			</div>
 		<?php 
 			pagination();
 			endwhile; 
